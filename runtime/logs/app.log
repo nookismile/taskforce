@@ -1,0 +1,153 @@
+2025-01-16 20:44:59 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Command.php(460): yii\db\Command->queryInternal('fetchAll', 7)
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\mysql\Schema.php(123): yii\db\Command->queryColumn()
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Schema.php(235): yii\db\mysql\Schema->findTableNames('')
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(225): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\ActiveForm.php(331): yii\BaseYii::createObject(Array)
+#18 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\generators\model\form.php(13): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#21 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\views\default\view.php(41): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#22 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#24 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#25 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#29 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#30 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#31 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Command.php(460): yii\db\Command->queryInternal('fetchAll', 7)
+#5 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\mysql\Schema.php(123): yii\db\Command->queryColumn()
+#6 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\db\Schema.php(235): yii\db\mysql\Schema->findTableNames('')
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(225): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#13 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\ActiveForm.php(331): yii\BaseYii::createObject(Array)
+#16 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\generators\model\form.php(13): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\views\default\view.php(41): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#20 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#22 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#23 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#29 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2basic'
+)
+
+2025-01-16 20:44:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    'PHPSESSID' => 'eq91ctk8utcn60d49igs3ji1uq'
+    '_csrf' => 'bbb7b3ba1df9f306673885cea06a612a5710f185fc30281887ae3605eae13151a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"R3YolzGMbJNPeNrpZfOMC0NkChL1jihe\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/taskforce/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; PHPSESSID=eq91ctk8utcn60d49igs3ji1uq; _csrf=bbb7b3ba1df9f306673885cea06a612a5710f185fc30281887ae3605eae13151a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22R3YolzGMbJNPeNrpZfOMC0NkChL1jihe%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '14173'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1737056699.6413
+    'REQUEST_TIME' => 1737056699
+]
