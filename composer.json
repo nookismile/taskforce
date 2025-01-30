@@ -5,8 +5,8 @@
   "license": "proprietary",
   "authors": [
     {
-      "name": "Kirill Senkevich",
-      "email": "frexin@htmlacademy.ru"
+      "name": "Christina Novickova",
+      "email": "stina.novickova@yandex.ru"
     }
   ],
   "require": {
@@ -23,6 +23,9 @@
     "process-timeout": 1800,
     "fxp-asset": {
       "enabled": false
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
     }
   },
   "scripts": {

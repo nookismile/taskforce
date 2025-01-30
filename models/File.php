@@ -14,8 +14,8 @@ use Yii;
  * @property int $user_id
  * @property string $dt_add
  *
- * @property Tasks $task
- * @property Users $user
+ * @property Task $task
+ * @property User $user
  */
 class File extends \yii\db\ActiveRecord
 {
@@ -65,7 +65,7 @@ class File extends \yii\db\ActiveRecord
      */
     public function getTask()
     {
-        return $this->hasOne(Tasks::class, ['id' => 'task_id']);
+        return $this->hasOne(Task::class, ['id' => 'task_id']);
     }
 
     /**
@@ -75,6 +75,6 @@ class File extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(Users::class, ['id' => 'user_id']);
+        return $this->hasOne(User::class, ['id' => 'user_id']);
     }
 }

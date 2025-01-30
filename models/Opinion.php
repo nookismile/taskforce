@@ -14,8 +14,8 @@ use Yii;
  * @property string $description
  * @property string|null $dt_add
  *
- * @property Users $owner
- * @property Users $performer
+ * @property User $owner
+ * @property User $performer
  */
 class Opinion extends \yii\db\ActiveRecord
 {
@@ -37,8 +37,8 @@ class Opinion extends \yii\db\ActiveRecord
             [['owner_id', 'performer_id', 'rate'], 'integer'],
             [['description'], 'string'],
             [['dt_add'], 'safe'],
-            [['owner_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::class, 'targetAttribute' => ['owner_id' => 'id']],
-            [['performer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::class, 'targetAttribute' => ['performer_id' => 'id']],
+            [['owner_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['owner_id' => 'id']],
+            [['performer_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['performer_id' => 'id']],
         ];
     }
 
@@ -64,7 +64,7 @@ class Opinion extends \yii\db\ActiveRecord
      */
     public function getOwner()
     {
-        return $this->hasOne(Users::class, ['id' => 'owner_id']);
+        return $this->hasOne(User::class, ['id' => 'owner_id']);
     }
 
     /**
@@ -74,6 +74,6 @@ class Opinion extends \yii\db\ActiveRecord
      */
     public function getPerformer()
     {
-        return $this->hasOne(Users::class, ['id' => 'performer_id']);
+        return $this->hasOne(User::class, ['id' => 'performer_id']);
     }
 }

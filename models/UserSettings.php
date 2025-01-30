@@ -23,7 +23,7 @@ use Yii;
  * @property int|null $is_performer
  * @property int $user_id
  *
- * @property Users $user
+ * @property User $user
  */
 class UserSettings extends \yii\db\ActiveRecord
 {
@@ -85,7 +85,7 @@ class UserSettings extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(Users::class, ['id' => 'user_id']);
+        return $this->hasOne(User::class, ['id' => 'user_id']);
     }
 
     /**

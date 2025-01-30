@@ -14,12 +14,10 @@ use Yii;
  * @property string $password
  * @property string $dt_add
  *
- * @property Cities $city
- * @property Files[] $files
- * @property Opinions[] $opinions
- * @property Opinions[] $opinions0
- * @property Replies[] $replies
- * @property UserCategories[] $userCategories
+ * @property City $city
+ * @property File[] $files
+ * @property Opinion[] $opinions
+ * @property Reply[] $replies
  * @property UserSettings $userSettings
  */
 class User extends \yii\db\ActiveRecord
@@ -44,7 +42,7 @@ class User extends \yii\db\ActiveRecord
             [['email', 'name'], 'string', 'max' => 255],
             [['password'], 'string', 'max' => 64],
             [['email'], 'unique'],
-            [['city_id'], 'exist', 'skipOnError' => true, 'targetClass' => Cities::class, 'targetAttribute' => ['city_id' => 'id']],
+            [['city_id'], 'exist', 'skipOnError' => true, 'targetClass' => City::class, 'targetAttribute' => ['city_id' => 'id']],
         ];
     }
 
@@ -70,7 +68,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getCity()
     {
-        return $this->hasOne(Cities::class, ['id' => 'city_id']);
+        return $this->hasOne(City::class, ['id' => 'city_id']);
     }
 
     /**
@@ -80,7 +78,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getFiles()
     {
-        return $this->hasMany(Files::class, ['user_id' => 'id']);
+        return $this->hasMany(File::class, ['user_id' => 'id']);
     }
 
     /**
@@ -90,7 +88,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getOpinions()
     {
-        return $this->hasMany(Opinions::class, ['owner_id' => 'id']);
+        return $this->hasMany(Opinion::class, ['owner_id' => 'id']);
     }
 
     /**
@@ -100,7 +98,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getOpinions0()
     {
-        return $this->hasMany(Opinions::class, ['performer_id' => 'id']);
+        return $this->hasMany(Opinion::class, ['performer_id' => 'id']);
     }
 
     /**
@@ -110,20 +108,10 @@ class User extends \yii\db\ActiveRecord
      */
     public function getReplies()
     {
-        return $this->hasMany(Replies::class, ['user_id' => 'id']);
+        return $this->hasMany(y::class, ['user_id' => 'id']);
     }
 
-    /**
-     * Gets query for [[UserCategories]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUserCategories()
-    {
-        return $this->hasMany(UserCategories::class, ['user_id' => 'id']);
-    }
-
-    /**
+     /**
      * Gets query for [[UserSettings]].
      *
      * @return \yii\db\ActiveQuery

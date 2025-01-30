@@ -19,10 +19,10 @@ use Yii;
  * @property int|null $performer_id
  * @property int $status_id
  *
- * @property Categories $category
- * @property Files[] $files
- * @property Replies[] $replies
- * @property Statuses $status
+ * @property Category $category
+ * @property File[] $files
+ * @property Reply[] $replies
+ * @property Status $status
  */
 class Task extends \yii\db\ActiveRecord
 {
@@ -45,8 +45,8 @@ class Task extends \yii\db\ActiveRecord
             [['description'], 'string'],
             [['expire_dt', 'dt_add'], 'safe'],
             [['name', 'location'], 'string', 'max' => 255],
-            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Categories::class, 'targetAttribute' => ['category_id' => 'id']],
-            [['status_id'], 'exist', 'skipOnError' => true, 'targetClass' => Statuses::class, 'targetAttribute' => ['status_id' => 'id']],
+            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::class, 'targetAttribute' => ['category_id' => 'id']],
+            [['status_id'], 'exist', 'skipOnError' => true, 'targetClass' => Status::class, 'targetAttribute' => ['status_id' => 'id']],
         ];
     }
 
@@ -77,7 +77,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getCategory()
     {
-        return $this->hasOne(Categories::class, ['id' => 'category_id']);
+        return $this->hasOne(Category::class, ['id' => 'category_id']);
     }
 
     /**
@@ -87,7 +87,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getFiles()
     {
-        return $this->hasMany(Files::class, ['task_id' => 'id']);
+        return $this->hasMany(File::class, ['task_id' => 'id']);
     }
 
     /**
@@ -97,7 +97,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getReplies()
     {
-        return $this->hasMany(Replies::class, ['task_id' => 'id']);
+        return $this->hasMany(Reply::class, ['task_id' => 'id']);
     }
 
     /**
@@ -107,6 +107,6 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getStatus()
     {
-        return $this->hasOne(Statuses::class, ['id' => 'status_id']);
+        return $this->hasOne(Status::class, ['id' => 'status_id']);
     }
 }

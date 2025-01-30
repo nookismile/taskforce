@@ -10,7 +10,7 @@ use Yii;
  * @property int $id
  * @property string $name
  *
- * @property Tasks[] $tasks
+ * @property Task[] $tasks
  */
 class Status extends \yii\db\ActiveRecord
 {
@@ -52,6 +52,6 @@ class Status extends \yii\db\ActiveRecord
      */
     public function getTasks()
     {
-        return $this->hasMany(Tasks::class, ['status_id' => 'id']);
+        return $this->hasMany(Task::class, ['status_id' => 'id']);
     }
 }

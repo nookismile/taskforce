@@ -10,8 +10,7 @@ use Yii;
  * @property int $id
  * @property string $name
  *
- * @property Tasks[] $tasks
- * @property UserCategories[] $userCategories
+ * @property Task[] $tasks
  */
 class Category extends \yii\db\ActiveRecord
 {
@@ -52,16 +51,6 @@ class Category extends \yii\db\ActiveRecord
      */
     public function getTasks()
     {
-        return $this->hasMany(Tasks::class, ['category_id' => 'id']);
-    }
-
-    /**
-     * Gets query for [[UserCategories]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUserCategories()
-    {
-        return $this->hasMany(UserCategories::class, ['category_id' => 'id']);
+        return $this->hasMany(Task::class, ['category_id' => 'id']);
     }
 }

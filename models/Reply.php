@@ -14,8 +14,8 @@ use Yii;
  * @property int $task_id
  * @property int|null $is_approved
  *
- * @property Tasks $task
- * @property Users $user
+ * @property Task $task
+ * @property User $user
  */
 class Reply extends \yii\db\ActiveRecord
 {
@@ -37,8 +37,8 @@ class Reply extends \yii\db\ActiveRecord
             [['user_id', 'task_id', 'is_approved'], 'integer'],
             [['dt_add'], 'safe'],
             [['description'], 'string', 'max' => 255],
-            [['task_id'], 'exist', 'skipOnError' => true, 'targetClass' => Tasks::class, 'targetAttribute' => ['task_id' => 'id']],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::class, 'targetAttribute' => ['user_id' => 'id']],
+            [['task_id'], 'exist', 'skipOnError' => true, 'targetClass' => Task::class, 'targetAttribute' => ['task_id' => 'id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
 
@@ -64,7 +64,7 @@ class Reply extends \yii\db\ActiveRecord
      */
     public function getTask()
     {
-        return $this->hasOne(Tasks::class, ['id' => 'task_id']);
+        return $this->hasOne(Task::class, ['id' => 'task_id']);
     }
 
     /**
@@ -74,6 +74,6 @@ class Reply extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(Users::class, ['id' => 'user_id']);
+        return $this->hasOne(User::class, ['id' => 'user_id']);
     }
 }
