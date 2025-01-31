@@ -26,6 +26,10 @@ use Yii;
  */
 class Task extends \yii\db\ActiveRecord
 {
+    public $noResponses;
+    public $noLocation;
+    public $filterPeriod;
+
     /**
      * {@inheritdoc}
      */
@@ -68,6 +72,28 @@ class Task extends \yii\db\ActiveRecord
             'performer_id' => 'Performer ID',
             'status_id' => 'Status ID',
         ];
+    }
+
+    public function getSearchQuery()
+    {
+        $query = self::find();
+        $query->where(['status_id' => Status::STATUS_NEW]);
+
+        $query->andFilterWhere(['category_id' => $this->category_id]);
+
+        if ($this->noLocation) {
+            $query->andWhere('location IS NULL');
+        }
+
+        if ($this->noResponses) {
+            $query->joinWith('replies r')->andWhere('r.id IS NULL');
+        }
+
+        if ($this->filterPeriod) {
+            $query->andWhere('UNIX_TIMESTAMP(tasks.dt_add) > UNIX_TIMESTAMP() - :period', [':period' => $this->filterPeriod]);
+        }
+
+        return $query->orderBy('dt_add DESC');
     }
 
     /**

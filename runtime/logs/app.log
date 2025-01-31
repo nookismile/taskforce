@@ -1572,3 +1572,1148 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1738276139.0369
     'REQUEST_TIME' => 1738276139
 ]
+2025-01-31 11:30:08 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 11:30:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '7089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738319407.6834
+    'REQUEST_TIME' => 1738319407
+]
+2025-01-31 11:30:20 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 11:30:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '7125'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738319420.6138
+    'REQUEST_TIME' => 1738319420
+]
+2025-01-31 11:30:24 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 11:30:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '7126'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738319424.1641
+    'REQUEST_TIME' => 1738319424
+]
+2025-01-31 11:31:08 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 11:31:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '7219'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738319468.7981
+    'REQUEST_TIME' => 1738319468
+]
+2025-01-31 11:53:43 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 11:53:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '10068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738320822.9001
+    'REQUEST_TIME' => 1738320822
+]
+2025-01-31 12:13:48 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 12:13:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '11956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738322028.0785
+    'REQUEST_TIME' => 1738322028
+]
+2025-01-31 12:14:46 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 12:14:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '12146'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738322086.1494
+    'REQUEST_TIME' => 1738322086
+]
+2025-01-31 12:14:48 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(30): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(13): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 12:14:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '12147'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738322088.2198
+    'REQUEST_TIME' => 1738322088
+]
+2025-01-31 12:38:43 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\xampp\htdocs\taskforce\views\tasks\index.php:20
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\views\tasks\index.php(20): yii\base\ErrorHandler->handleError(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#5 C:\xampp\htdocs\taskforce\controllers\TasksController.php(15): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-01-31 12:38:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '14864'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738323523.128
+    'REQUEST_TIME' => 1738323523
+]
+2025-01-31 15:43:55 [::1][-][-][error][Error] Error: Class "ActiveForm" not found in C:\xampp\htdocs\taskforce\views\tasks\index.php:58
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#4 C:\xampp\htdocs\taskforce\controllers\TasksController.php(18): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\TasksController->actionIndex()
+#6 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks', Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2025-01-31 15:43:54 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=65846396bfb5ab110ca7b908da9fd9889dca9d080e7b12d954b69f5ae696811ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ce4cxrHp1eNzbdi7VakUsCnuVScOm0t-%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '6244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738334634.8045
+    'REQUEST_TIME' => 1738334634
+]
+2025-01-31 20:04:43 [::1][-][-][error][TypeError] TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\helpers\BaseHtml.php:1993
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\helpers\BaseHtml.php(1993): count('pagination-list')
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\helpers\BaseHtml.php(157): yii\helpers\BaseHtml::renderTagAttributes('pagination-list')
+#2 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\LinkPager.php(224): yii\helpers\BaseHtml::tag('ul', '<li class="pagi...', 'pagination-list')
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\LinkPager.php(158): yii\widgets\LinkPager->renderPageButtons()
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Widget.php(146): yii\widgets\LinkPager->run()
+#5 C:\xampp\htdocs\taskforce\views\tasks\index.php(38): yii\base\Widget::widget(Array)
+#6 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#10 C:\xampp\htdocs\taskforce\controllers\TasksController.php(25): yii\base\Controller->render('index', Array)
+#11 [internal function]: app\controllers\TasksController->actionIndex()
+#12 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#15 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks/index', Array)
+#16 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#18 {main}
+2025-01-31 20:04:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks/index'
+    'page' => '1'
+    'per-page' => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '4558a2fb795948babe471cbeaf1fca04fd59150cbf69e3c9cc03aa6a7d4879a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NynVwOIuo5E1yJki46_EB5waq8YV0CZ\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/taskforce/web/index.php?r=tasks%2Findex&page=2&per-page=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=4558a2fb795948babe471cbeaf1fca04fd59150cbf69e3c9cc03aa6a7d4879a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NynVwOIuo5E1yJki46_EB5waq8YV0CZ%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '1993'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks%2Findex&page=1&per-page=5'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks%2Findex&page=1&per-page=5'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738350283.5882
+    'REQUEST_TIME' => 1738350283
+]
+2025-01-31 20:45:08 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Attribute name must contain word characters only. in C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\helpers\BaseHtml.php:2268
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\ActiveField.php(929): yii\helpers\BaseHtml::getAttributeName('\xD0\x91\xD0\xB5\xD0\xB7 \xD0\xBE\xD1\x82\xD0\xBA\xD0\xBB...')
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\ActiveField.php(604): yii\widgets\ActiveField->addAriaAttributes(Array)
+#2 C:\xampp\htdocs\taskforce\views\tasks\index.php(63): yii\widgets\ActiveField->checkbox(Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#6 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#7 C:\xampp\htdocs\taskforce\controllers\TasksController.php(25): yii\base\Controller->render('index', Array)
+#8 [internal function]: app\controllers\TasksController->actionIndex()
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#12 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks/index', Array)
+#13 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2025-01-31 20:45:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks/index'
+    'page' => '1'
+    'per-page' => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '4558a2fb795948babe471cbeaf1fca04fd59150cbf69e3c9cc03aa6a7d4879a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NynVwOIuo5E1yJki46_EB5waq8YV0CZ\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/taskforce/web/index.php?r=tasks%2Findex&page=2&per-page=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=4558a2fb795948babe471cbeaf1fca04fd59150cbf69e3c9cc03aa6a7d4879a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NynVwOIuo5E1yJki46_EB5waq8YV0CZ%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '8027'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks%2Findex&page=1&per-page=5'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks%2Findex&page=1&per-page=5'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738352708.026
+    'REQUEST_TIME' => 1738352708
+]
+2025-01-31 21:05:05 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Attribute name must contain word characters only. in C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\helpers\BaseHtml.php:2268
+Stack trace:
+#0 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\ActiveField.php(929): yii\helpers\BaseHtml::getAttributeName('\xD0\x91\xD0\xB5\xD0\xB7 \xD0\xBE\xD1\x82\xD0\xBA\xD0\xBB...')
+#1 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\widgets\ActiveField.php(604): yii\widgets\ActiveField->addAriaAttributes(Array)
+#2 C:\xampp\htdocs\taskforce\views\tasks\index.php(63): yii\widgets\ActiveField->checkbox(Array)
+#3 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\TasksController))
+#6 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TasksController))
+#7 C:\xampp\htdocs\taskforce\controllers\TasksController.php(24): yii\base\Controller->render('index', Array)
+#8 [internal function]: app\controllers\TasksController->actionIndex()
+#9 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#12 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('tasks/index', Array)
+#13 C:\xampp\htdocs\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\taskforce\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2025-01-31 21:05:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'tasks/index'
+    'page' => '1'
+    'per-page' => '5'
+]
+
+$_POST = [
+    '_csrf' => 'JSSXoPc8L-aWgGSHDJSpYkeZZHJBq2mDo84OLQaijncTau7OoUtgr-PvUcI97eMJLq1SLQTpXPTCvzZ0UJLNLQ=='
+    'Task' => [
+        'category_id' => [
+            0 => '1'
+            1 => '3'
+        ]
+        'noResponses' => '0'
+        'noLocation' => '1'
+        'filterPeriod' => '86400'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ym_uid' => '1722464262682329955'
+    '_ym_d' => '1722464262'
+    'carrotquest_device_guid' => 'cf3c184e-88c2-4a8a-8abd-078530ad1270'
+    '_ga' => 'GA1.1.2105642058.1728235844'
+    '_ga_9NH77LJB8C' => 'GS1.1.1729291793.6.1.1729292048.60.0.0'
+    '_csrf' => '4558a2fb795948babe471cbeaf1fca04fd59150cbf69e3c9cc03aa6a7d4879a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NynVwOIuo5E1yJki46_EB5waq8YV0CZ\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '280'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/taskforce/web/index.php?r=tasks%2Findex&page=1&per-page=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_ym_uid=1722464262682329955; _ym_d=1722464262; carrotquest_device_guid=cf3c184e-88c2-4a8a-8abd-078530ad1270; _ga=GA1.1.2105642058.1728235844; _ga_9NH77LJB8C=GS1.1.1729291793.6.1.1729292048.60.0.0; _csrf=4558a2fb795948babe471cbeaf1fca04fd59150cbf69e3c9cc03aa6a7d4879a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NynVwOIuo5E1yJki46_EB5waq8YV0CZ%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;Git\\cmd;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\programs\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Honor\\scoop\\shims;C:\\Users\\Honor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Honor\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\bin;;C:\\Users\\Honor\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Honor\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\BrowserStackLocal\\;C:\\tools\\dart-sdk\\bin;C:\\Users\\Honor\\AppData\\Local\\Pub\\Cache\\bin;D:\\programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\JetBrains Rider 2023.1\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/taskforce/web/index.php'
+    'REMOTE_PORT' => '11951'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=tasks%2Findex&page=1&per-page=5'
+    'REQUEST_URI' => '/taskforce/web/index.php?r=tasks%2Findex&page=1&per-page=5'
+    'SCRIPT_NAME' => '/taskforce/web/index.php'
+    'PHP_SELF' => '/taskforce/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1738353905.1032
+    'REQUEST_TIME' => 1738353905
+]
